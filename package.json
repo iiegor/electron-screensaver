@@ -1,0 +1,22 @@
+{
+  "name": "electron-screensaver",
+  "productName": "Screensaver",
+  "version": "0.0.1",
+  "description": "A cross-platform screensaver",
+  "main": "browser.js",
+  "author": "Iegor Azuaga <dextrackmedia@gmail.com>",
+  "license": "MIT",
+  "electronVersion": "0.36.5",
+  "devDependencies": {
+    "electron-prebuilt": "0.36.5",
+    "electron-rebuild": "^1.1.2",
+    "electron-packager": "^5.2.0"
+  },
+  "scripts": {
+    "start": "electron . --dev --enable-logging",
+    "build:win32": "node scripts/build.js --win32",
+    "build:linux": "node scripts/build.js --linux",
+    "build:darwin": "node scripts/build.js --darwin"
+  },
+  "private": true
+}
